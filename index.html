@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniHealth - Home</title>
+    <style>
+      body {
+        background-color: #f9f9f9;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif,
+          sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      header {
+        background-color: #a0c4ff;
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+
+      nav a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .logo {
+        font-size: 1.8em;
+        font-weight: bold;
+      }
+
+      .login-signup {
+        background-color: #ffddd2;
+        padding: 8px 15px;
+      }
+
+      .login-signup:hover {
+        background-color: #efc1b2;
+      }
+
+      main {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .help-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+        background-color: #f0f8ff;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .help-section h2 {
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .text-content select,
+      .go-button {
+        width: 80%;
+        margin: 10px 0;
+      }
+
+      .text-content select {
+        padding: 10px;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        background-color: #fff;
+      }
+
+      .go-button {
+        background-color: #a0c4ff;
+        color: #333;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .go-button:hover {
+        background-color: #c1e1c1;
+      }
+
+      .image-content {
+        width: 70%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .offer-section {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .offer-section h3 {
+        color: #333;
+        font-size: 2em;
+        margin-bottom: 15px;
+      }
+
+      .offer-section p {
+        font-size: 1em;
+        color: #555;
+        margin-bottom: 15px;
+      }
+
+      .offer-section img {
+        width: 30%;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .help-section {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .image-content,
+        .text-content select,
+        .go-button {
+          width: 100%;
+        }
+      }
+
+      footer {
+        background-color: #3f6d9c;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+      }
+
+      .footer-container h3 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+      }
+
+      .footer-container p {
+        margin: 10px 0;
+      }
+
+      .contact-info p {
+        margin: 5px 0;
+      }
+
+      .contact-info img {
+        width: 20px;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Get Started</a></li>
+          <li><a href="learnmore.html">Learn More</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li class="logo">UniHealth</li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="referral.html">Refer a Patient</a></li>
+          <li><a href="login.html" class="login-signup">Login/Signup</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="help-section">
+        <div class="text-content">
+          <h2>How can we help you?</h2>
+          <p>
+            Choose an option from the list below and click "Go" to get started.
+          </p>
+          <select id="help-select">
+            <option value="">I would like to...</option>
+            <option value="learn">Learn about programs</option>
+            <option value="contact">Contact support</option>
+            <option value="schedule">Schedule a session</option>
+          </select>
+          <button class="go-button">Go</button>
+        </div>
+        <img
+          src="images/brains.jpg"
+          alt="Make Your Mental Health a Priority"
+          class="image-content"
+        />
+      </section>
+
+      <section class="offer-section">
+        <h3>WHAT WE OFFER !</h3>
+
+        <p><strong>Results-Based Care, Tailored to You:</strong></p>
+        <p>
+          Our dedicated professionals develop customized care plans designed
+          around your specific requirements and data. From start to finish, we
+          guide you through a seamless process, offering psychiatry, therapy, or
+          both, to ensure the best support.
+        </p>
+
+        <p><strong>Personalized Care:</strong></p>
+        <p>
+          When medication is essential, our psychiatric experts respond
+          quickly—analyzing over 100 key factors to recommend the most suitable
+          and well-tolerated treatment options specifically crafted for you.
+        </p>
+
+        <p><strong>Scientifically-Proven Therapy:</strong></p>
+        <p>
+          Our comprehensive virtual therapy program combines cognitive and
+          behavioral techniques with guided self-practice. These approaches are
+          backed by evidence to be effective across various mental health
+          conditions, empowering you to enhance and sustain your emotional
+          well-being.
+        </p>
+
+        <p><strong>Emergency Mental Health Support:</strong></p>
+        <p>
+          Our groundbreaking Crisis Care program provides urgent assistance for
+          individuals facing heightened suicide risk. Utilizing the
+          Collaborative Assessment and Management of Suicidality (CAMS) model,
+          this care framework is supported by more than 30 years of research and
+          expertise.
+        </p>
+
+        <img src="images/counselling.webp" alt="Counselling" />
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <h3>Get in Touch</h3>
+        <p>We'd love to hear from you! Reach out to us for any inquiries.</p>
+        <div class="contact-info">
+          <p><img src="images/gmail.png" alt="Email" /> liza@example.com</p>
+          <p>
+            <img src="images/call.png" alt="Phone" /> +977 9871122303, 01479002
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
